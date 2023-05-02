@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build Docker image
-      run: docker build -t my-app-image .
+      run: docker build -t app .
 
       
     - name: Configure AWS credentials
