@@ -5,7 +5,7 @@ FROM adoptopenjdk:11-jre-hotspot
 WORKDIR /app
 
 # Copy the compiled Spring Boot application JAR file
-COPY target/demo.jar app.jar
+
 
 # Expose port 8080
 EXPOSE 8080
