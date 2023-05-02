@@ -25,5 +25,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
+          context: .
           push: true
-          tag: ricky892/dockerimages:1
+          tags: user/app:latest
+        
