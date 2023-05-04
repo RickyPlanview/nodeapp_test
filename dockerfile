@@ -1,8 +1,13 @@
-# syntax=docker/dockerfile:1
-   
-FROM node:18-alpine
-WORKDIR /app
+FROM node:14-alpine
+
+# Create app directory
+WORKDIR /usr/src/app
+
 COPY . .
-RUN yarn install --production
-# CMD ["node", "src/index.js"]
+
+RUN npm install
+
 EXPOSE 8080
+
+CMD [ "node", "server.js" ]
+
