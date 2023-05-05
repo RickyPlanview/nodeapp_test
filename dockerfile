@@ -1,13 +1,13 @@
-FROM node:14-alpine
+# FROM node:14-alpine
 
-# Create app directory
-WORKDIR /usr/src/app
+# # Create app directory
+# WORKDIR /usr/src/app
 
-COPY . .
+# COPY . .
 
-RUN npm install
+# RUN npm install
 
-EXPOSE 8080
+# EXPOSE 8080
 
-CMD [ "node", "server.js" ]
+# CMD [ "node", "server.js" ]
 
